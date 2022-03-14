@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/smith/AndroidStudioProjects/ShopRye/app/src/main/res/layout/fragment_rye_job_detail.xml" value="0.22056159420289856" />
+        <entry key="..\:/Users/smith/AndroidStudioProjects/ShopRye/app/src/main/res/layout/fragment_shopping_cart.xml" value="0.22056159420289856" />
+        <entry key="..\:/Users/smith/Desktop/ShopRye/app/src/main/res/drawable/ic_android_mail.xml" value="0.1745" />
+        <entry key="..\:/Users/smith/Desktop/ShopRye/app/src/main/res/drawable/ic_detail_back.xml" value="0.1" />
+        <entry key="..\:/Users/smith/Desktop/ShopRye/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
+        <entry key="..\:/Users/smith/Desktop/ShopRye/app/src/main/res/drawable/ic_shopping_cart.xml" value="0.1" />
+        <entry key="..\:/Users/smith/Desktop/ShopRye/app/src/main/res/drawable/shopping_cart.xml" value="0.1" />
+        <entry key="..\:/Users/smith/Desktop/ShopRye/app/src/main/res/drawable/tab_selector.xml" value="0.1" />
+        <entry key="..\:/Users/smith/Desktop/ShopRye/app/src/main/res/layout/fragment_rye_job_detail.xml" value="0.15260416666666668" />
+        <entry key="..\:/Users/smith/Desktop/ShopRye/app/src/main/res/layout/fragment_rye_job_list.xml" value="0.1" />
+        <entry key="..\:/Users/smith/Desktop/ShopRye/app/src/main/res/layout/fragment_shopping_cart.xml" value="0.22" />
+        <entry key="..\:/Users/smith/Desktop/ShopRye/app/src/main/res/layout/fragment_view_pager.xml" value="0.23020833333333332" />
+        <entry key="..\:/Users/smith/Desktop/ShopRye/app/src/main/res/layout/shopping_cart_entry.xml" value="0.24114583333333334" />
+        <entry key="..\:/Users/smith/Desktop/ShopRye/app/src/main/res/menu/menu_rye_job_detail.xml" value="0.15260416666666668" />
+        <entry key="..\:/Users/smith/Desktop/ShopRye/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.18" />
+        <entry key="..\:/Users/smith/Desktop/ShopRye/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

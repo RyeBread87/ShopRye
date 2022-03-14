@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">ShopRye</string>
+    <string name="rye_email" translation_description="Email address to send requested rye jobs to">ryan@theryebread.com</string>
+    <string name="rye_email_subject" translation_description="Subject for email requesting rye jobs">Ryequested Services</string>
+    <string name="shopping_cart" translation_description="Shopping cart tab title">Shopping Cart</string>
+    <string name="rye_jobs_list" translation_description="Rye jobs tab title">Rye Jobs</string>
+    <string name="share_rye_job_text" translation_description="The default messaged used when sharing a rye job">Check out this cool service offered in the ShopRye app: %s</string>
+    <string name="requires_travel" translation_description="The default messaged used when sharing a rye job">Travel Required</string>
+    <string name="no_travel_required" translation_description="The default messaged used when sharing a rye job">Travel Not Required</string>
+    <string name="added_to_cart">Added to Cart</string>
+    <string name="job_image">job image</string>
+    <string name="add_to_shopping_cart">add to shopping cart?</string>
+    <string name="empty_shopping_cart">Empty Shopping Cart</string>
+    <string name="send_request_for_rye_jobs">Send Request for Rye Jobs</string>
+    <string name="add_to_cart_button">Add to Cart Button</string>
+    <string name="image_of_rye_job">Image of Rye Job</string>
+</resources>

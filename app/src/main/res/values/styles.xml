@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- To see how these attributes are used, please visit https://material.io/develop/android/theming/color/ -->
+    <style name="Base.Theme.ShopRye" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/design_default_color_primary_dark</item>
+        <item name="colorOnPrimary">@color/design_default_color_primary_variant</item>
+        <item name="colorPrimaryDark">@color/design_default_color_background</item>
+        <item name="colorOnSurface">@color/design_default_color_secondary</item>
+        <item name="colorAccent">@color/design_default_color_secondary_variant</item>
+        <item name="colorSurface">@color/design_default_color_surface</item>
+        <item name="colorSecondary">@color/cardview_dark_background</item>
+        <item name="android:colorBackground">@color/material_dynamic_neutral0</item>
+    </style>
+
+    <style name="Theme.ShopRye.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.ShopRye.AppBarOverlay" parent="ThemeOverlay.MaterialComponents.Dark.ActionBar"/>
+
+    <style name="TextAppearance.ShopRye.Toolbar.Text" parent="TextAppearance.MaterialComponents.Headline5" >
+        <!--<item name="android:textColor">?attr/colorOnSurface</item>-->
+    </style>
+
+</resources>

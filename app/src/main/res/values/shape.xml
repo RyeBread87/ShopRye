@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ShapeAppearance.ShopRye.Card" parent="ShapeAppearance.MaterialComponents">
+        <item name="cornerFamily">rounded</item>
+
+        <item name="cornerSizeTopLeft">@dimen/card_corner_radius</item>
+        <item name="cornerSizeTopRight">@dimen/card_corner_radius</item>
+        <item name="cornerSizeBottomRight">@dimen/card_corner_radius</item>
+        <item name="cornerSizeBottomLeft">@dimen/card_corner_radius</item>
+    </style>
+
+    <style name="ShapeAppearance.ShopRye.Button.Add" parent="ShapeAppearance.MaterialComponents">
+        <item name="cornerFamily">rounded</item>
+
+        <item name="cornerSizeTopLeft">@dimen/card_corner_radius</item>
+        <item name="cornerSizeTopRight">@dimen/button_corner_radius</item>
+        <item name="cornerSizeBottomRight">@dimen/card_corner_radius</item>
+        <item name="cornerSizeBottomLeft">@dimen/button_corner_radius</item>
+    </style>
+
+    <style
+        name="ShapeAppearance.ShopRye.FAB"
+        parent="ShapeAppearance.MaterialComponents.SmallComponent" />
+
+    <!-- Add rye job button -->
+    <dimen name="button_corner_radius">12dp</dimen>
+
+</resources>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="hasSomethingInCart"
+            type="boolean" />
+
+        <variable
+            name="callback"
+            type="com.application.shoprye.fragments.ShoppingCartFragment.Callback" />
+    </data>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="false">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/shopping_cart_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:layout_marginStart="@dimen/card_side_margin"
+            android:layout_marginEnd="@dimen/card_side_margin"
+            android:paddingTop="@dimen/header_margin"
+            app:layoutManager="androidx.recyclerview.widget.StaggeredGridLayoutManager"
+            app:spanCount="2"
+            tools:listitem="@layout/shopping_cart_entry">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:isGone="@{hasSomethingInCart}">
+
+            <TextView
+                android:id="@+id/empty_shopping_cart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/empty_shopping_cart"
+                android:textAppearance="?attr/textAppearanceHeadline5" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/add_rye_job"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="?attr/colorPrimary"
+                android:text="@string/add_to_shopping_cart"
+                app:backgroundTint="?attr/colorOnPrimary"
+                app:shapeAppearance="@style/ShapeAppearance.ShopRye.Button.Add"/>
+
+        </LinearLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/send_fab"
+            style="@style/Widget.MaterialComponents.FloatingActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginEnd="@dimen/fab_margin"
+            android:layout_marginBottom="@dimen/fab_bottom_padding"
+            android:contentDescription="@string/send_request_for_rye_jobs"
+            android:onClick="@{() -> callback.send()}"
+            android:tint="@android:color/white"
+            app:isFabGone="@{!hasSomethingInCart}"
+            app:shapeAppearance="@style/ShapeAppearance.ShopRye.FAB"
+            app:srcCompat="@drawable/ic_android_mail"
+            tools:ignore="ImageContrastCheck" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>

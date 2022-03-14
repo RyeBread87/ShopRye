@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.application.shoprye">
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:name=".MainApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ShopRye"
+        android:networkSecurityConfig="@xml/network_security_config">
+        <activity android:name=".HiltTestActivity"
+            android:exported="false">
+        </activity>
+        <receiver
+            android:name="com.application.shoprye.MailClientChosenReceiver"
+            android:enabled="true"
+            android:exported="true">
+        </receiver>
+    </application>
+
+</manifest>
