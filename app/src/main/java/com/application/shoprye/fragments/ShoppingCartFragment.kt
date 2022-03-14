@@ -111,17 +111,6 @@ class ShoppingCartFragment : Fragment() {
         return 0
     }
 
-    // FloatingActionButtons anchored to AppBarLayouts have their visibility controlled by the scroll position.
-    // We want to turn this behavior off to hide the FAB when it is clicked.
-    //
-    // This is adapted from Chris Banes' Stack Overflow answer: https://stackoverflow.com/a/41442923
-    private fun hideAppBarFab(fab: FloatingActionButton) {
-        val params = fab.layoutParams as CoordinatorLayout.LayoutParams
-        val behavior = params.behavior as FloatingActionButton.Behavior
-        behavior.isAutoHideEnabled = false
-        fab.hide()
-    }
-
     fun interface Callback {
         fun send()
     }
