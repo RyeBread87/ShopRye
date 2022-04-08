@@ -17,11 +17,13 @@ import androidx.fragment.app.viewModels
 import androidx.viewpager2.widget.ViewPager2
 import com.application.shoprye.MailClientChosenReceiver
 import com.application.shoprye.R
+import com.application.shoprye.ScrollingOffsetFixListener
 import com.application.shoprye.fragments.ShoppingCartFragment.Callback
 import com.application.shoprye.adapters.RYE_JOB_LIST_PAGE_INDEX
 import com.application.shoprye.adapters.ShoppingCartAdapter
 import com.application.shoprye.databinding.FragmentShoppingCartBinding
 import com.application.shoprye.viewmodels.ShoppingCartListViewModel
+import com.google.android.material.appbar.AppBarLayout
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.DelicateCoroutinesApi
@@ -73,6 +75,10 @@ class ShoppingCartFragment : Fragment() {
 
         subscribeUi(adapter, binding)
         getSoftButtonsBarSizePort(requireActivity())
+
+        val appBarLayout = activity?.findViewById<View>(R.id.app_bar_layout) as AppBarLayout
+        appBarLayout.addOnOffsetChangedListener(ScrollingOffsetFixListener(activity?.findViewById<View>(R.id.view_pager) as ViewPager2))
+
         return binding.root
     }
 
