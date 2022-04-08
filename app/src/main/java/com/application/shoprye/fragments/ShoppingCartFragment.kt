@@ -9,7 +9,6 @@ import android.util.DisplayMetrics
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.coordinatorlayout.widget.CoordinatorLayout
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
@@ -24,9 +23,11 @@ import com.application.shoprye.adapters.ShoppingCartAdapter
 import com.application.shoprye.databinding.FragmentShoppingCartBinding
 import com.application.shoprye.viewmodels.ShoppingCartListViewModel
 import com.google.android.material.appbar.AppBarLayout
+<<<<<<< HEAD
 import com.google.android.material.floatingactionbutton.FloatingActionButton
+=======
+>>>>>>> f9d9a24441f44bfd23058c0af1d214a3fc0a905a
 import dagger.hilt.android.AndroidEntryPoint
-import kotlinx.coroutines.DelicateCoroutinesApi
 
 @AndroidEntryPoint
 class ShoppingCartFragment : Fragment() {
