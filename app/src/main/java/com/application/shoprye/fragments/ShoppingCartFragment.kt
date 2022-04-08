@@ -23,10 +23,6 @@ import com.application.shoprye.adapters.ShoppingCartAdapter
 import com.application.shoprye.databinding.FragmentShoppingCartBinding
 import com.application.shoprye.viewmodels.ShoppingCartListViewModel
 import com.google.android.material.appbar.AppBarLayout
-<<<<<<< HEAD
-import com.google.android.material.floatingactionbutton.FloatingActionButton
-=======
->>>>>>> f9d9a24441f44bfd23058c0af1d214a3fc0a905a
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
